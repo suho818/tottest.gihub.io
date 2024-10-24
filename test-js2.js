@@ -46,7 +46,7 @@ const createCircle = (width, color, x, y) => {
     ...physics,
     render: {
       sprite: {
-        texture: `../image/candy${rm+1}.png`,
+        texture: `https://github.com/suho818/tottest.gihub.io/tree/main/image/candy${rm+1}.png`,
         xScale: 1.9*sizeCoefficient,
         yScale: 1.9*sizeCoefficient
       }
@@ -88,7 +88,7 @@ class Ghost {
     isWallTouched = true;
     candy = null;
     randomMoveTimeOut = null;
-    image = ['../image/cuteghost-right.png', '../image/cuteghost.png']
+    image = ['https://github.com/suho818/tottest.gihub.io/tree/main/image/cuteghost-right.png', 'https://github.com/suho818/tottest.gihub.io/tree/main/image/cuteghost.png']
         constructor(x, y, speed) {
             // 유령 이미지 및 물리 객체 설정
             this.body = Bodies.rectangle(x, y, 80, 80, {
