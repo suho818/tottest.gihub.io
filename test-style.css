@@ -1,0 +1,65 @@
+    @font-face {
+  font-family: "EF_jejudoldam";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee7e0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #container {
+        width: 100vw;
+        height: 100vh;
+      }
+      #result-screen {
+        display: none; /* 결과창을 처음엔 숨겨둠 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        font-family: "EF_jejudoldam";
+        flex-direction: column;
+      }
+
+      #result-screen h1 {
+        margin-top: 500px;
+      }
+      #score {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        font-family: "EF_jejudoldam";
+        color: #333;
+        user-select: none; /* 드래그 금지 */
+      }
+      .share-btn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "EF_jejudoldam";
+        
+      }
+
+      .share-btn:hover {
+        background-color: #45a049;
+      }
+      svg {
+        display: none;
+      }

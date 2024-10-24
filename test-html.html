@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics-based Falling Animation</title>
+    <link rel="stylesheet" href="test-style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="score">Score: 0</div> <!-- 점수 표시 영역 -->
+    </div>
+    <!-- 결과창 -->
+    <div id="result-screen">
+      <h1>게임 종료</h1>
+      <button class="share-btn" onclick="shareScore()">공유하기</button>
+    </div>
+    <!-- path cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/pathseg@1.2.1/pathseg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/poly-decomp@0.3.0/build/decomp.min.js"></script>
+
+    <!-- matter.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.js"></script>
+    <script src="test-js2.js"></script>
+  </body>
+</html>
